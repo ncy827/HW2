@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>RL HW2: Cliff Walking</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Q-learning vs SARSA 演算法比較研究</h1>
+    <div class="controls">
+        <button onclick="startTraining()">執行訓練並生成圖檔</button>
+        <p id="status">狀態: 準備就緒</p>
+    </div>
+    <div class="container">
+        <div class="visuals">
+            <h3>Q-learning 策略 (離策略)</h3>
+            <div id="q-grid" class="grid"></div>
+            <h3>SARSA 策略 (同策略)</h3>
+            <div id="sarsa-grid" class="grid"></div>
+        </div>
+        <div class="chart-box">
+            <canvas id="rewardChart"></canvas>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
